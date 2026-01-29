@@ -1,0 +1,253 @@
+html,
+body {
+    font-family: Helvetica;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: url("/assets/images/background.jpg") center / cover no-repeat fixed;
+    color: #ffffff;
+}
+
+.parent {
+    max-width:500px;
+    padding: 15px;
+    width: 300%;
+    background-color: rgba(20, 20, 20, 0.63);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.heading h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading p {
+    line-height: 1.2;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    gap: 13px;
+    margin-top: 15px;
+}
+
+.card {
+    flex: 1;
+    background: rgba(40, 40, 40, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 25px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    background: rgba(55, 55, 55, 1);
+    border-color: #474747;
+}
+
+.card i {
+    font-size: 48px;
+}
+
+.card span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-g {
+    flex: 1;
+    background: rgba(40, 40, 40, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 25px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.card-g:hover {
+    background: rgba(55, 55, 55, 1);
+    border-color: #474747;
+}
+
+.card-g i {
+    font-size: 48px;
+}
+
+.card-g span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-d {
+    flex: 1;
+    background: rgba(40, 40, 40, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 25px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.card-d:hover {
+    background: rgba(55, 55, 55, 1);
+    border-color: #474747;
+}
+
+.card-d i {
+    font-size: 48px;
+}
+
+.card-d span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 420px;
+    padding: 20px;
+    background-color: rgba(20, 20, 20, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.modal-content .heading h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.modal-content .heading p {
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-content .credentials {
+    text-align: center;
+}
+
+.modal-content .pwd {
+    width: 100%;
+    background: rgba(40, 40, 40, 0.8);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+    box-sizing: border-box;
+}
+
+.modal-content .pwd::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.modal-content .pwd:hover {
+    background: rgba(50, 50, 50, 0.9);
+}
+
+.modal-content .pwd:focus {
+    background: rgba(55, 55, 55, 1);
+    border-color: #474747;
+}
+
+.modal-content .login-btn {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(58, 58, 58, 0.8);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.modal-content .login-btn:hover {
+    background-color: #707375;
+}
+
+.modal-content .cancel-btn {
+    background: rgba(80, 40, 40, 0.8);
+}
+
+.modal-content .cancel-btn:hover {
+    background-color: #a04040;
+}
+
+.modal-content .status {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+.modal-content .status.error {
+    color: #fd0909;
+}
+
+.modal-content .status.success {
+    color: #08ce08;
+}

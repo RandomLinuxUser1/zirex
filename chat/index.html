@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../frontend/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Zirex | Chat</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="heading">
+            <p class="username-display">Logged in as: <span id="current-user"></span></p>
+        </div>
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <!-- Messages will be loaded here so no need for like anything idk -->
+            </div>
+        </div>
+        <div class="input-section">
+            <input 
+                type="text" 
+                class="message-input" 
+                id="message-input" 
+                placeholder="Message"
+                maxlength="500"
+                autocomplete="off"
+            >
+            <button class="send-btn" id="send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+
+        <div class="status" id="status"></div>
+
+        <div class="actions">
+            <button class="logout-btn" id="logout-btn">Logout</button>
+            <button class="home-btn" id="home-btn">Home</button>
+        </div>
+    </div>
+
+    <script type="module" src="../backend/chat/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../frontend/app.css">
+    <link rel="stylesheet" href="../frontend/player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Zirex - Games</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Welcome to Zirex.</h1>
+            <p>This is a cool site right?</p>
+        </div>
+
+        <div class="topbar">
+            <button class="btn" id="home">Home</button>
+            <button class="btn" id="abtblank">About:Blank</button>
+        </div>
+
+        <div class="search-container">
+            <input type="search" id="searchQuery" placeholder="Search games..." class="search-input">
+        </div>
+
+        <div class="games-grid" id="gamesContainer"></div>
+    </div>
+
+    <div class="player-container" id="playerOverlay" style="display:none;">
+        <div class="topbar2">
+            <div class="topbar-left2">
+                <button class="control-btn" id="homeBtn">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </button>
+                <button class="control-btn" id="reloadBtn">
+                    <i class="fas fa-redo"></i>
+                    <span>Reload</span>
+                </button>
+            </div>
+
+            <div class="topbar-center2">
+                <h2 id="gameName">Loading...</h2>
+            </div>
+
+            <div class="topbar-right2">
+                <button class="control-btn" id="fullscreenBtn">
+                    <i class="fas fa-expand"></i>
+                    <span>Fullscreen</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="game-container" id="gameContainer">
+            <div class="loader" id="loader">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading game...</p>
+            </div>
+            <iframe id="gameFrame" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="../backend/app/app.js"></script>
+    <script src="../backend/overlay/overlay.js"></script>
+    <script type="module" src="../backend/cookies/cookie.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+html,
+body {
+    font-family: Helvetica;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: url("/assets/images/background.jpg") center / cover no-repeat fixed;
+    color: #ffffff;
+}
+
+.parent {
+    width: 80%;
+    max-width: 420px;
+    padding: 20px;
+
+    background-color: rgba(20, 20, 20, 0.63);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.heading h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading p {
+    line-height: 0.2;
+    text-align: center;
+}
+
+.credentials {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.usr,
+.pwd {
+    width: 100%;
+    background: rgba(40, 40, 40, 0.8);
+    color: #fff;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+
+    padding: 12px 1px;
+    margin-top: 10px;
+
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.usr::placeholder,
+.pwd::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.usr:hover,
+.pwd:hover {
+    background: rgba(50, 50, 50, 0.9);
+}
+
+.usr:focus,
+.pwd:focus {
+    background: rgba(55, 55, 55, 1);
+    border-color: #474747;
+}
+
+.login-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 70px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+
+    background: rgba(58, 58, 58, 0.281);
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: #707375;
+}
+
+.login-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.status {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+.status.error {
+    color: #fd0909;
+}
+
+.status.success {
+    color: #08ce08;
+}
