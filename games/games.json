@@ -1,0 +1,107 @@
+[
+    {
+        "title": "Slope",
+        "img": "../assets/images/slope.png",
+        "path": "../games/slope.html"
+    },
+    {
+        "title": "Slope 2",
+        "img": "../assets/images/slope2.png",
+        "path": "../games/g/slope2/index.html"
+    },
+    {
+        "title": "One on One soccer",
+        "img": "../assets/images/1on1soccer.png",
+        "path": "../games/1on1soccer.html"
+    },
+    {
+        "title": "2048",
+        "img": "../assets/images/2048.png",
+        "path": "../games/2048.html"
+    },
+    {
+        "title": "Cat Ninja",
+        "img": "../assets/images/catninja.png",
+        "path": "../games/catninja.html"
+    },
+    {
+        "title": "Evil Glitch",
+        "img": "../assets/images/evilglitch.png",
+        "path": "../games/evilglitch.html"
+    },
+    {
+        "title": "Geometry Dash",
+        "img": "../assets/images/geometrydash.png",
+        "path": "../games/geometrydash.html"
+    },
+    {
+        "title": "Hole.io",
+        "img": "../assets/images/holeio.png",
+        "path": "../games/holeio.html"
+    },
+    {
+        "title": "Paper IO 2",
+        "img": "../assets/images/paperio2.png",
+        "path": "../games/paperio2.html"
+    },
+    {
+        "title": "pacman",
+        "img": "../assets/images/pacman.png",
+        "path": "../games/pacman.html"
+    },
+    {
+        "title": "QWOP",
+        "img": "../assets/images/qwop.png",
+        "path": "../games/qwop.html"
+    },
+    {
+        "title": "Offline Paradise | Buggy",
+        "img": "../assets/images/offlineparadise.png",
+        "path": "../games/offlineparadise.html"
+    },
+    {
+        "title": "Radius Raid",
+        "img": "../assets/images/radiusraid.png",
+        "path": "../games/radiusraid.html"
+    },
+    {
+        "title": "Raft Wars",
+        "img": "../assets/images/raftwars.png",
+        "path": "../games/raftwars.html"
+    },
+    {
+        "title": "Raft Wars 2",
+        "img": "../assets/images/raftwars2.png",
+        "path": "../games/raftwars2.html"
+    },
+    {
+        "title": "Rolling Forest",
+        "img": "../assets/images/rollingforests.png",
+        "path": "../games/rollingforests.html"
+    },
+    {
+        "title": "Sand Game",
+        "img": "../assets/images/sandgame.png",
+        "path": "../games/sandgame.html"
+    },
+    {
+        "title": "Space Bar Clicker",
+        "img": "../assets/images/spacebarclicker.png",
+        "path": "../games/spacebarclicker.html"
+    },
+    {
+        "title": "Super Mario 64",
+        "img": "../assets/images/supermario64.png",
+        "path": "../games/supermario64.html"
+    },
+    {
+        "title": "tetris",
+        "img": "../assets/images/tetris.png",
+        "path": "../games/tetris.html"
+    },
+    {
+        "title": "wordle",
+        "img": "../assets/images/wordle.png",
+        "path": "../games/wordle.html"
+    }
+]
